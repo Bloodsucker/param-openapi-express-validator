@@ -1,11 +1,12 @@
 import {RequestHandler, Request, Response, NextFunction, Application} from 'express';
-import mainhandler from './middleware/mainHandler';
+import mainHandler from './middleware/mainHandler';
+import { OpenAPIV3 } from "openapi-types";
 
-export function paramOpenApiValidator(app: Application, openApi: object /*TODO*/): RequestHandler {
+export function paramOpenApiValidator(app: Application, openApi: OpenAPIV3.Document): RequestHandler {
 
     app.locals.validator = {
         spec: openApi
     };
     
-    return mainhandler;
+    return mainHandler;
 }
