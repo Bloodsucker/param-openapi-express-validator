@@ -1,6 +1,6 @@
-import { NextFunction, Request, Response } from "express";
-import paramValidatorHandler from "./paramValidatorHandler";
+import { Handler } from 'express';
+import { paramValidatorHandler } from './paramValidatorHandler';
 
-export default function mainHandler(req: Request, res: Response, next: NextFunction) {
-    paramValidatorHandler(req, res, next);
-}
+export const mainHandler: Handler = (req, res, next) => {
+	paramValidatorHandler(req, res, next);
+};

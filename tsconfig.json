@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-      "module": "CommonJS",
-      "target": "ES2019",
-      "moduleResolution": "Node",
-      "outDir": "dist",
-      "strict": true,
-      "inlineSourceMap": true,
+    "module": "CommonJS",
+    "target": "ES2019",
+    "moduleResolution": "Node",
+    "outDir": "dist",
+    "strict": true,
+    "inlineSourceMap": true
   },
   "include": [
-      "src/"
-  ],
+    "src/"
+  ]
 }
